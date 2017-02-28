@@ -5,7 +5,7 @@
     <dialog id="dialog">
       <h3>Tell us about you!</h3>
       <div>
-        <label for="firstName" v-model="firstName">First Name</label>
+        <label for="firstName">First Name</label>
         <input id="firstName" v-model="firstName" />
       </div>
       <button @click.prevent="hideDialog">close</button>
