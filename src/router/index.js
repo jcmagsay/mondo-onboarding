@@ -8,13 +8,13 @@ import Hero2 from 'components/hero-2';
 Vue.use(Router);
 
 export default new Router({
-  mode: 'hash',
+  mode: 'history',
   routes: [
     {
       path: '/',
       component: Home,
       children: [
-        { path: '/', component: Hero },
+        { path: '/hero', component: Hero },
         { path: '/hero-2', component: Hero2 },
       ],
     },
