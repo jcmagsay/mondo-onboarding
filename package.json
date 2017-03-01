@@ -5,8 +5,8 @@
   "main": "./src/main.js",
   "scripts": {
     "test": "console.log('App test successful')",
-    "dev": "cross-env NODE_ENV=dev webpack-dev-server --config webpack/dev.js --inline --hot --port 8080",
-    "build": "cross-env NODE_ENV=prod webpack --config webpack/build.js --progress --hide-modules"
+    "start:dev": "cross-env NODE_ENV=dev webpack-dev-server --config webpack/dev.js --inline --hot --port 8080",
+    "start:build": "cross-env NODE_ENV=prod webpack --config webpack/build.js --progress --hide-modules"
   },
   "repository": {
     "type": "git",
