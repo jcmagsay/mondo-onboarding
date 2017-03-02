@@ -4,9 +4,11 @@
   "description": "\"Onboarding site for new mondo devs\"",
   "main": "./src/main.js",
   "scripts": {
-    "test": "console.log('App test successful')",
     "start:dev": "cross-env NODE_ENV=dev webpack-dev-server --config webpack/dev.js --inline --hot --port 8080",
-    "start:build": "cross-env NODE_ENV=prod webpack --config webpack/build.js --progress --hide-modules"
+    "build": "cross-env NODE_ENV=prod webpack --config webpack/build.js --progress --hide-modules",
+    "postinstall": "npm install express",
+    "deploy": "git subtree push — prefix dist heroku master",
+    "start": "node ./server/server.js"
   },
   "repository": {
     "type": "git",
@@ -28,13 +30,14 @@
     "cross-env": "^1.0.6",
     "css-loader": "^0.23.0",
     "file-loader": "^0.8.4",
+    "serve-static": "^1.12.0",
     "style-loader": "^0.13.0",
     "url-loader": "^0.5.7",
+    "vue": "^2.0.0",
     "vue-html-loader": "^1.0.0",
     "vue-loader": "^11.1.1",
     "vue-router": "^2.0.0",
-    "vue": "^2.1.10",
-    "webpack": "^2.2.0","vue": "^2.0.0"
+    "webpack": "^2.2.0"
   },
   "devDependencies": {
     "vue-template-compiler": "^2.2.1",

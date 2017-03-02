@@ -39,9 +39,16 @@ yarn run start:build
 
 ## Stack
 
-- HTML5
+### Front End
 - CSS3 (SCSS)
+- HTML5
 - JavaScript (ES2015)
 - Vue2
-- Webpack2
+
+### Package Manager and Compiler
 - Babel
+- Webpack2
+
+### Server
+- Express
+- Node
