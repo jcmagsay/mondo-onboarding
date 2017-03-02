@@ -36,6 +36,16 @@ yarn run start:build
 
 ```
 
+## Deploy to Heroku
+
+``` bash
+
+# Deploys code to Heroku App
+yarn run deploy
+
+```
+
+
 
 ## Stack
 
