@@ -21,7 +21,7 @@ cd mondo-onboarding
 yarn
 
 # start Webpack Dev Server
-yarn run start:dev
+yarn start:dev
 
 Visit http://localhost:8080
 
@@ -32,7 +32,7 @@ Visit http://localhost:8080
 ``` bash
 
 # Creates Prod version of bundle
-yarn run start:build
+yarn start:build
 
 ```
 
@@ -41,7 +41,7 @@ yarn run start:build
 ``` bash
 
 # Deploys code to Heroku App
-yarn run deploy
+yarn deploy
 
 ```
 
