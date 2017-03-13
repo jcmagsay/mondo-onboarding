@@ -6,7 +6,7 @@
   "scripts": {
     "build": "cross-env NODE_ENV=prod webpack --config webpack/build.js --progress --hide-modules",
     "deploy": "git push heroku master",
-    "postinstall": "webpack -p --config webpack.prod.config.js --progress",
+    "postinstall": "webpack -p --config webpack/build.js --progress",
     "start:dev": "cross-env NODE_ENV=dev webpack-dev-server --config webpack/dev.js --inline --hot --port 8080",
     "start": "node ./server/server.js"
   },
