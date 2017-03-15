@@ -6,7 +6,7 @@
   "scripts": {
     "build": "cross-env NODE_ENV=prod webpack --config webpack/build.js --progress --hide-modules",
     "deploy": "git push heroku master",
-    "postinstall": "npm install express",
+    "postinstall": "webpack -p --config webpack/build.js --progress",
     "start:dev": "cross-env NODE_ENV=dev webpack-dev-server --config webpack/dev.js --inline --hot --port 8080",
     "start": "node ./server/server.js"
   },
@@ -29,6 +29,7 @@
     "babel-runtime": "^5.8.0",
     "cross-env": "^1.0.6",
     "css-loader": "^0.23.0",
+    "ejs": "^2.5.6",
     "express": "^4.15.0",
     "file-loader": "^0.8.4",
     "style-loader": "^0.13.0",
