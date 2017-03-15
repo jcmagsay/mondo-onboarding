@@ -2,12 +2,7 @@
 
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link>
-      <router-link to="/hero">Hero</router-link>
-      <router-link to="/hero-2">Hero 2</router-link>
-      <router-link to="/foo">Foo</router-link>
-    </nav>
+    <navbar />
     <main>
       <h2 class="message">Welcome {{firstName}}!</h2>
       <a href="#" @click.prevent="showDialog">Tell us about you!</a>
